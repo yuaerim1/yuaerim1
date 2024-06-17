@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Iscream</title>
+    <meta name="description" content="Iscream">
+    <meta name="author" content="IScream">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /*
+          Figma Background for illustrative/preview purposes only.
+          You can remove this style tag with no consequence
+        */
+        .eva {width: 1920px;
+          height:2878px;
+          background: #ffffff;
+          transform: scale(15);
+          transform-origin: top left; /* 확장의 기준점을 대지의 좌상단으로 설정 */
+          z-index: 0}
+
+          .변덕 {transform: scale(2);
+          transform-origin: top left; /* 확장의 기준점을 대지의 좌상단으로 설정 */}
+
+            .overlay {
+               position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: white;
+              opacity: 0; /* 초기에는 투명도를 0으로 설정하여 숨김 */
+              transition: opacity 0.5s ease; /* 투명도 변경 시 애니메이션 효과 추가 */
+              z-index: 9999; /* 다른 요소 위에 보이도록 z-index 설정 */
+            }
+    </style>
+</head>
+<body>
+  <div class="overlay" id="whiteOverlay"></div>
+  <div class="eva"></div>
+    <div class="e23_4">
+        <div class="e68_1060"></div>
+        <div class="e68_1062"></div>
+        <div class="e68_1064"></div>
+        <div class="e68_1066"></div>
+        <div class="e68_1068"></div>
+        <div class="e68_1070"></div>
+        <div class="e68_1072"></div>
+        <div class="e68_1074"></div>
+        <div class="e68_1076"></div>
+        <div class="e23_408"></div>
+        <div class="e68_1078"></div>
+        <div class="e23_416"></div>
+        <div class="e23_417"></div>
+        <div class="e23_418"></div>
+        <div class="e23_419"></div>
+        <div class="e23_420"></div>
+        <div class="e23_421"></div>
+        <div class="e23_422"></div>
+        <div class="e23_423"></div>
+        <div class="e23_424"></div>
+        <div class="e68_1080"></div>
+        <div class="e23_492"></div>
+        <div class="e23_493"></div>
+        <div class="e68_1058"></div>
+        <div class="e23_499"></div>
+        <div class="e23_500"></div>
+        <div class="변덕">
+        <div class="e68_1082">
+            <span>한 발만 물러서면 </p> 지구는 평화로워진다.</span>
+        </div>
+        <div class="e68_1084">
+          <span> 우<p>리<p>가<p>원<p>하<p>는<p>것<p>은<p>지<p>구<p>뿐<p>이<p>다</span>
+        </div>
+        <div class="e68_1086">
+          <span>우 용</p>리 서</p>에 받</p>게 지</p>반 못</p>역 할</p>하 것</p>는 이</p>자 다</p>들 .</p>은</span>
+        </div>
+        <div class="e68_1088">
+          <span>우리의 신호</span>
+        </div>
+        <div class="e68_1090">
+          <span>우리는 지구를 정복한다.</span>
+        </div>
+        <div class="e68_1092">
+          <span>우리가 원하는 것은 지구뿐이다.</span>
+        </div>
+        <div class="e68_1094">
+          <span>우리에게 복종하라</span></div>
+        <div class="e72_3"><span>우리는 바보들에게 자비를 베푼다</span></div>
+        <div class="e72_5"><span>당</p>신</p>은</p>아</p>무</p>것</p>도</p>몰</p>랐</p>죠</p>?</span></div>
+        <div class="e72_7"><span>우리는 선택받은 민족이다</span></div>
+        <div class="e72_9"><span>모든 것은 우리의 배려입니다.<p>우리는 당신을<p>발전시킵니다.</span></div>
+        <div class="e72_11"><span>지구를 침략하다</span></div>
+        <div class="e72_13"><span>지<p>구<p>를</span></div>
+        <div class="e72_15"><span>침<p>략<p>하<p>다</span></div>
+        <div class="e72_17"><span>이<p>건<p>농<p>담<p>이<p>아<p>니<p>다</span></div>
+        <div class="e72_19"><span>우리는 외계인이다.</span></div>
+        <div class="e72_21"><span>지구를 침략하다</span></div>
+        <div class="e68_842"><span>Z</span></div>
+        <div class="e68_819"><span>Z</span></div>
+        <div class="e68_776"><span>Z</span></div>
+        <div class="e68_759"><span>Z</span></div>
+        <div class="e68_750"><span>Z</span></div>
+        <div class="e68_739"><span>Z</span></div>
+        <div class="e68_722"><span>Z</span></div>
+        <div class="e68_1030"><span>Z</span></div>
+    </div></div>
+    <script>
+    // 각 클래스 요소를 NodeList로 가져오기
+    const elements = document.querySelectorAll('.e68_1060, .e68_1062, .e68_1064, .e68_1066, .e68_1068, .e68_1070, .e68_1072, .e68_1074, .e68_1076, .e23_408, .e68_1078, .e23_416, .e23_417, .e23_418, .e23_419, .e23_420, .e23_421, .e23_422, .e23_423, .e23_424, .e68_1080, .e23_492, .e23_493, .e68_1058, .e23_499, .e23_500, .e68_1082, .e68_1084, .e68_1086, .e68_1088, .e68_1090, .e68_1092, .e68_1094, .e72_3, .e72_5, .e72_7, .e72_9, .e72_11, .e72_13, .e72_15, .e72_17, .e72_19, .e72_21, .e68_842, .e68_819, .e68_776, .e68_759, .e68_750, .e68_739, .e68_722, .e68_1030');
+
+    // 각 요소에 대해 left와 top 값을 5배로 조정
+    const originalLeft = 690; // 기존 left 값
+    const originalTop = 2000; // 기존 top 값
+    const factor = 15; // 배수
+    elements.forEach(element => {
+      // 기존 left, top 값을 읽어오기
+      const oldLeft = parseInt(window.getComputedStyle(element).left);
+      const oldTop = parseInt(window.getComputedStyle(element).top);
+
+      // 새로운 left와 top 값을 설정
+      const newLeft = oldLeft * factor;
+      const newTop = oldTop * factor;
+
+      // CSS 속성 변경
+      element.style.left = `${newLeft}px`;
+      element.style.top = `${newTop}px`;
+    });
+
+      // 3분(180000ms) 후에 overlay를 보이게 만듭니다.
+  setTimeout(function() {
+    document.getElementById('whiteOverlay').style.opacity = 1;
+  }, 60000); // 180000ms = 3분
+  </script>
+</body>
+</html>
